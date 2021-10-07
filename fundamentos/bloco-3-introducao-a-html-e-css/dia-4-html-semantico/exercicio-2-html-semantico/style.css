@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana","Arial",'"Helvetica Neue"',"Helvetica","sans-serif";
+}
+
+h1{
+    margin: 0;
+    font-size: 30px;
+}
+.cabecalho{
+    background-color: #3A506B;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;  
+    font-size: 18px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+ 
