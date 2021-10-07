@@ -10,8 +10,10 @@ h1{
     font-size: 30px;
 }
 .cabecalho{
-    background-color: #3A506B;
+    background-color: rgb(57, 74, 80);
     color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 header{
@@ -73,4 +75,9 @@ table {
 
 .fato-interessante img, table{
     margin-top: 30px;
+}
+
+footer{
+    text-align: center;
+    color: white;
 }
