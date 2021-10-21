@@ -13,6 +13,7 @@ function createDaysOfTheWeek() {
 
 createDaysOfTheWeek();
 
+// exercicio 1
 function createDaysOnCalendary() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let listaDeDias = document.querySelector('#days');
@@ -35,6 +36,8 @@ function createDaysOnCalendary() {
 
 createDaysOnCalendary();
 
+//exercicio 2
+
 function createButtonHoliday(feriados) {
     let btn = document.createElement('button');
     let container = document.querySelector('.buttons-container');
@@ -46,18 +49,64 @@ function createButtonHoliday(feriados) {
 
 createButtonHoliday('feriados');
 
+
+// exercicio 3
 let btn = document.querySelector('#btn-holiday');
 
 btn.addEventListener('click', mudaCor);
 
-function mudaCor(elemento) {
-    elementoCor = elemento.target.style.backgroundColor;
+function mudaCor() {
+    let feriados = document.querySelectorAll('.holiday');
+    let elementoCor = feriados[0].style.backgroundColor; 
+
     if(elementoCor == 'green'){
-        elementoCor = 'rgb(233,233,233)';
+        elementoCor = 'rgb(238,238,238)';
     } else {
         elementoCor = 'green';
     }
-    console.log(elemento.target.style.backgroundColor);
+
+    for (const feriado of feriados) {
+        feriado.style.backgroundColor = elementoCor;
+    }
 }
+
+// exercicio 4
+
+function createButtonFriday(friday) {
+    let btn = document.createElement('button');
+    btn.id = 'btn-friday';
+    btn.textContent = friday;
+
+    let container = document.querySelector('.buttons-container');
+    container.appendChild(btn);
+}
+
+createButtonFriday('Sexta-Feira');
+
+// exercicio 5
+fridayContent = [];
+let btnFriday = document.querySelector('#btn-friday');
+let sextas = document.querySelectorAll('.friday');
+for (const day of sextas) {
+    fridayContent.push(day.textContent);
+}
+
+console.log(fridayContent);
+
+btnFriday.addEventListener('click', modificaTexto);
+function modificaTexto() {
+    let i = 0;
+    for (const sexta of sextas) {
+        if(sexta.textContent == 'sextou'){
+            sexta.textContent = fridayContent[i];
+            i++;
+        } else {
+            sexta.textContent = 'sextou';
+        }
+    }
+}
+
+
+
 
 
