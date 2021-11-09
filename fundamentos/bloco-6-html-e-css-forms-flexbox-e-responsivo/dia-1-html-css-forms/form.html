@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6.1 forms</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <label for="name"> Nome:
+                <input type="text" name='name' maxlength="40" required>
+            </label>
+            <label for="email"> Email:
+                <input type="email" name='email' maxlength="50" required>
+            </label>
+            <label for="cpf"> CPF:
+                <input type="text" name="cpf" maxlength="11" required>
+            </label>
+
+            <label for="address"> Endereço:
+                <input type="text" name='address' maxlength="200" required>
+            </label>
+            <label for="city"> Cidade:
+                <input type="text" name='city' maxlength="28" required>
+            </label>
+
+            <label for="estado">Estado:
+                <select name="estado" id="select-estados">
+                </select>
+            </label>
+
+            <label for="type">Tipo:
+                <input type="radio" name="type">Casa
+                <input type="radio" name="type">Apartamento
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Resumo do currículo: 
+                <textarea maxlength="1000" required></textarea>
+            </label>
+
+            <label>Cargo: 
+                <input type="text">
+            </label>
+
+            <label>Descrição do cargo: 
+                <input type="text" maxlength="500">
+            </label>
+
+            <label for="">Data de início:
+                <input type="date">
+            </label>
+        </fieldset>
+
+        <button type="submit" id="submit-button">Enviar</button>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
