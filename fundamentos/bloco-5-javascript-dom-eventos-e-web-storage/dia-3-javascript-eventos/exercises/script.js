@@ -187,8 +187,3 @@ function mudaCorDiaDoMes() {
 }
 
 mudaCorDiaDoMes();
-
-
-
-
-
